@@ -1,0 +1,109 @@
+:root {
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 14px;
+    background-image: url(../images/bg-mobile.png);
+    color: var(--Pale-Blue);
+    max-width: 1440;
+    font-family: Raleway;
+}
+
+main {
+    display: flex;
+    width: 60%;
+    gap: 30px;
+}
+
+.header {
+    background-color: var(--Dark-Blue);
+    padding:  40px 150px 40px 40px ;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+}
+
+.icones {
+    display: flex;
+    gap: 15px;
+}
+
+.icones div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);    
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.informacoes {
+    background-color: var(--Dark-Blue);
+    padding: 30px;
+    width: 60%;
+    align-self: flex-end;
+    border-radius: 10px;
+    position: relative;
+}
+
+.balao {
+    position: absolute;
+    background-color: var(--Pale-Blue);
+    width: 170px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -60px;
+    right: 40px;
+    border-radius: 10px;
+}
+
+.balao span {
+    color: var(--Grayish-Blue);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.balao strong {
+    color: var(--Very-Dark-Blue);
+    font-size: 40px;    
+}
+
+.barra {
+    width: 100%;
+    height: 20px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 10px;
+    padding: 3px;
+    margin: 10px 0;
+}
+
+.barra-interna {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+}
