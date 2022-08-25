@@ -38,6 +38,7 @@ main {
     padding:  40px 150px 40px 40px ;
     border-radius: 10px;
     border-top-right-radius: 100px;
+    width: 20%;
 }
 
 .icones {
@@ -58,11 +59,16 @@ main {
 
 .informacoes {
     background-color: var(--Dark-Blue);
-    padding: 30px;
+    padding: 30px 50px;
     width: 60%;
+    min-width: 260px;
     align-self: flex-end;
     border-radius: 10px;
     position: relative;
+}
+
+.informacoes > span {
+    letter-spacing: 2px;
 }
 
 .balao {
@@ -87,6 +93,15 @@ main {
     letter-spacing: 2px;
 }
 
+.balao::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    right: 0;
+    border: 30px solid;
+    border-color: transparent var(--Pale-Blue) transparent transparent ;
+}
+
 .balao strong {
     color: var(--Very-Dark-Blue);
     font-size: 40px;    
@@ -102,8 +117,55 @@ main {
 }
 
 .barra-interna {
-    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3px;
+    box-sizing: border-box;
+    width: 70%;
     height: 100%;
     border-radius: 10px;
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+    
+}
+
+.barra-interna > div {
+    width: 15px;
+    height: 15px;
+    background-color: var(--Pale-Blue);
+    border-radius: 50%;
+    
+}
+
+.tamanho {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+    body {
+        align-items: start;
+        margin: 50px 0px;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .informacoes {
+        width: 100%;
+    }
+
+    .balao {
+        top: 80%;
+        right: 30%;
+    }
+
+    .balao::after {
+        content: none;
+    }
 }
