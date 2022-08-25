@@ -21,7 +21,11 @@ body {
     align-items: center;
     height: 100vh;
     font-size: 14px;
-    background-image: url(../images/bg-mobile.png);
+    background: url(../images/bg-desktop.png);
+    background-color: var(--Very-Dark-Blue);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: 0vh 50vh;
     color: var(--Pale-Blue);
     max-width: 1440;
     font-family: Raleway;
@@ -143,12 +147,12 @@ main {
 }
 
 @media (max-width: 700px) {
+    
     body {
         align-items: start;
-        justify-content: flex-start;
-        margin: 50px 10px;
+        margin-top: 50px;
+     
     }
-
     main {
         flex-wrap: wrap;
     }
@@ -169,4 +173,13 @@ main {
     .balao::after {
         content: none;
     }
+}
+
+@media (max-width: 600px) {
+    body {
+        justify-content: flex-start;
+        margin: 50px 15px;
+    }
+
+
 }
