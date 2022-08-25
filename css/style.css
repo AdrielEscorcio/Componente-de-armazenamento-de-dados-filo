@@ -145,7 +145,8 @@ main {
 @media (max-width: 700px) {
     body {
         align-items: start;
-        margin: 50px 0px;
+        justify-content: flex-start;
+        margin: 50px 20px;
     }
 
     main {
