@@ -61,7 +61,7 @@ main {
     background-color: var(--Dark-Blue);
     padding: 30px 50px;
     width: 60%;
-    min-width: 260px;
+    min-width: 250px;
     align-self: flex-end;
     border-radius: 10px;
     position: relative;
@@ -146,7 +146,7 @@ main {
     body {
         align-items: start;
         justify-content: flex-start;
-        margin: 50px 20px;
+        margin: 50px 10px;
     }
 
     main {
